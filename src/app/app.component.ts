@@ -9,13 +9,16 @@ export class AppComponent {
   
   title = 'sofia2';
 
-  getStorage() {
-    const a = sessionStorage.getItem("sofia2-example")
-    console.log("Result from SessionStorage", a)
+  setStorage() {
+    sessionStorage.setItem('prueba', 'test')
+    localStorage.setItem('mmm', 'test123')
   }
 
-  setStorage() {
-    sessionStorage.setItem("sofia2-example", "test")
+  getStorage() {
+    const a = sessionStorage.getItem('prueba')
+    const a0 = sessionStorage.getItem('mmm')
+    console.log(a)
+    console.log(a0)
   }
 
 }
