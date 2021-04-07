@@ -16,7 +16,7 @@ export class AppComponent {
 
   getStorage() {
     const a = sessionStorage.getItem('prueba')
-    const a0 = sessionStorage.getItem('mmm')
+    const a0 = localStorage.getItem('mmm')
     console.log(a)
     console.log(a0)
   }
